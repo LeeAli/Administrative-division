@@ -1,3 +1,4 @@
 /administrative_division/.scrapy/
 /data/
 */__pycache__
+.idea/*
