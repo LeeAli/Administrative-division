@@ -22,8 +22,8 @@
 
 ```json
 [
-  {"area_code": "469001", "area_name": "五指山市", "city_code": "469001", "province_code": "46", "short_name": "琼", "link": "90/469001.html"},
-  {"area_code": "469002", "area_name": "琼海市", "city_code": "469002", "province_code": "46", "short_name": "琼", "link": "90/469002.html"}
+  {"area_code": "469001", "area_name": "五指山市", "city_code": "469000", "province_code": "46", "short_name": "琼", "link": "90/469001.html"},
+  {"area_code": "469002", "area_name": "琼海市", "city_code": "469000", "province_code": "46", "short_name": "琼", "link": "90/469002.html"}
 ]
 ```
 
