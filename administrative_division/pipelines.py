@@ -52,8 +52,8 @@ class JsonWriterPipeline(object):
                 'village_name': item['name'],
                 'street_code': item['code'][:-3],
                 'area_code': item['code'][:6],
-                'city_code': item['code'][:6],
-                'province_code': item['code'],
+                'city_code': item['code'][:4]+'00',
+                'province_code': item['code'][:2],
                 'short_name': DistrictUtils.get_short_name(item['code'][:2]),
                 'type_code': item['type_code']
             })
@@ -73,7 +73,7 @@ class JsonWriterPipeline(object):
         code = str(item.get('code'))
         if code.endswith('00000000'):
             self.write_json('city', {
-                'city_code': item['code'][:6],
+                'city_code': item['code'][:4]+'00',
                 'city_name': item['name'],
                 'province_code': item['code'][:2],
                 'short_name': DistrictUtils.get_short_name(item['code'][:2]),
@@ -83,7 +83,7 @@ class JsonWriterPipeline(object):
             self.write_json('area', {
                 'area_code': item['code'][:6],
                 'area_name': item['name'],
-                'city_code': item['code'][:6],
+                'city_code': item['code'][:4]+'00',
                 'province_code': item['code'][:2],
                 'short_name': DistrictUtils.get_short_name(item['code'][:2]),
                 'link': item['link']
@@ -93,7 +93,7 @@ class JsonWriterPipeline(object):
                 'code': item['code'][:-3],
                 'name': item['name'],
                 'area_code': item['code'][:6],
-                'city_code': item['code'][:6],
+                'city_code': item['code'][:4]+'00',
                 'province_code': item['code'][:2],
                 'short_name': DistrictUtils.get_short_name(item['code'][:2]),
                 'link': item['link']
