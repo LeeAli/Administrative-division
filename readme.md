@@ -1,6 +1,4 @@
-[2023国家统计局]: https://www.stats.gov.cn/sj/tjbz/tjyqhdmhcxhfdm/2023/
-
-### ”行政区划数据，包含省、市、县区、乡镇街道、村等
+### [2023国家统计局](https://www.stats.gov.cn/sj/tjbz/tjyqhdmhcxhfdm/2023/ )行政区划数据，包含省、市、县区、乡镇街道、村等
 
 ##### 1.省级
 
